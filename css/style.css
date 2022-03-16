@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@400;600;900&display=swap');
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Miltonian';
+}
+
+header {
+  
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px;
+}
+.text {
+  inline-size: 500px;
+  line-height: 20px;
+}
+
+
+@media (max-width:630px){
+ 
+}
+@media (max-width:310px) {
+  header {
+    min-width: 600px;
+  }
+  main {
+    
+  }
+}
