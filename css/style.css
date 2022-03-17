@@ -9,6 +9,9 @@
   box-sizing: border-box;
   font-family: Roboto, sans-serif;
 }
+body {
+  font-size: .5em;
+}
 header {
   height: auto;
   min-height: 300px;
@@ -17,9 +20,11 @@ header {
   background-position: bottom;
 }
 header h1 {
-  padding-top: 50px;
+  height: auto;
+  width: 100%;
+  padding-top: 5em;
   text-align: center;
-  font-size: 80px;
+  font-size: 5em;
   color: #fff;
   font-family: 'Bungee', cursive;
 }
@@ -43,7 +48,7 @@ header h1 {
   text-align: justify;
 }
 .text h2 {
-  font-size: 25px;
+  font-size: 2.5em;
   font-family: 'Playfair Display', serif;
   margin-bottom: 15px;
 }
@@ -84,6 +89,7 @@ footer {
   }
   footer {
     min-width: 650px;
+    
   }
   .text {
     inline-size: 80px;
@@ -92,5 +98,11 @@ footer {
 @media (max-width: 648px) {
   .text {
     margin-left: 0;
+  }
+  footer {
+    flex-direction: column;
+  }
+  .separation {
+    display: none;
   }
 }
