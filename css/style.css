@@ -123,7 +123,7 @@ footer {
 }
 
 /* Media querry */
-@media (max-width:1026px) and (min-width:780px) {
+@media (max-width: 1026px) and (min-width: 780px) {
   .card-4 {
     flex: content;
     background-position: bottom;
@@ -149,6 +149,14 @@ footer {
   .container {
     min-width: 320px;
     background-image: none;
+  }
+  .container {
+    background: url(../img/matt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-shadow: 1px 1px 2px #333;
   }
   footer {
     min-width: 320px;
