@@ -43,6 +43,48 @@ header p {
   background-repeat: no-repeat;
   background-position: left;
 }
+/* cards */
+
+section.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+.item {
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 15px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #333;
+  padding: 50px 10px 0 10px;
+}
+
+/* bg cards */
+.card-1 {
+  background: url(../img/beach.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.card-2 {
+  background: url(../img/collectif.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.card-3 {
+  background: url(../img/pool.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+.card-4 {
+  background: url(../img/camp.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
 .text {
   height: auto;
   width: auto;
@@ -79,6 +121,15 @@ footer {
 .contact p {
   line-height: 30px;
 }
+
+/* Media querry */
+@media (max-width:1026px) and (min-width:800px) {
+  .card-4 {
+    flex: content;
+    background-position: bottom;
+  }
+}
+
 @media (max-width: 850px) {
   .text {
     margin-left: 267px;
@@ -112,6 +163,9 @@ footer {
   }
   footer {
     flex-direction: column;
+  }
+  .contact {
+    text-align: center;
   }
   .separation {
     display: none;
