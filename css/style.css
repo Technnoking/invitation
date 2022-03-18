@@ -10,7 +10,7 @@
   font-family: Roboto, sans-serif;
 }
 body {
-  font-size: .5em;
+  font-size: 1rem;
 }
 header {
   height: auto;
@@ -19,10 +19,14 @@ header {
   background-size: cover;
   background-position: bottom;
 }
-header h1 {
+.titre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header p {
   height: auto;
   width: 100%;
-  padding-top: 5em;
   text-align: center;
   font-size: 5em;
   color: #fff;
@@ -33,16 +37,17 @@ header h1 {
   justify-content: space-around;
   align-items: center;
   padding: 25px;
-  height: 100%;
+  height: a;
   background: url(../img/cordo-removebg-preview.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: left;
 }
 .text {
-  height: 400px;
-  min-width: 500px;
-  inline-size: 300px;
+  height: auto;
+  width: auto;
+  min-width: 320px;
+  inline-size: 400px;
   line-height: 30px;
   padding: 25px;
   text-align: justify;
@@ -78,21 +83,27 @@ footer {
   .text {
     margin-left: 267px;
   }
+  header p {
+    line-height: 80px;
+    font-size: 10vw;
+  }
+  .titre {
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 647px) {
   header {
-    min-width: 650px;
+    min-width: 320px;
   }
   .container {
-    min-width: 650px;
+    min-width: 320px;
     background-image: none;
   }
   footer {
-    min-width: 650px;
-    
+    min-width: 320px;
   }
   .text {
-    inline-size: 80px;
+    inline-size: 320px;
   }
 }
 @media (max-width: 648px) {
@@ -104,5 +115,13 @@ footer {
   }
   .separation {
     display: none;
+  }
+}
+@media (max-width: 320px) {
+  header {
+    width: 320px;
+  }
+  footer {
+    width: 320px;
   }
 }
